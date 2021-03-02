@@ -4,7 +4,46 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>CSS Grids</title>
+		<style>
+			.wrapper {
+				display: grid;
+				grid-template-columns: 70% 30%;
+				/* grid-colum-gap: 1em;
+        grid-colum-row: 1em;  */
+
+				grid-gap: 1em;
+			}
+			.wrapper > div {
+				background: #eee;
+				padding: 1em;
+			}
+
+			.wrapper > div:nth-child(odd) {
+				background: #ddd;
+			}
+		</style>
 	</head>
-	<body></body>
+	<body>
+		<div class="wrapper">
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+				eveniet harum ad fuga doloremque reiciendis est veritatis atque!
+				Dolores, adipisci. Quos nulla sunt nemo hic asperiores debitis
+				consequuntur ipsum. Reiciendis numquam voluptates et fugit quidem
+				perspiciatis commodi inventore rem itaque deleniti voluptate, quam
+				praesentium tenetur natus rerum, unde adipisci minima voluptatum! Animi,
+				consequatur suscipit voluptates quaerat amet quam eaque rerum
+				perspiciatis, dicta ex dolorum impedit ut blanditiis modi quo!
+				Repellendus eum ipsam pariatur harum rerum facilis asperiores assumenda,
+				error exercitationem.
+			</div>
+			<div>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+				architecto rerum vel. Quibusdam quas incidunt quod ad molestias? Alias
+				quidem est voluptatibus nemo voluptate. Velit non eaque consequatur
+				harum magni?
+			</div>
+		</div>
+	</body>
 </html>
